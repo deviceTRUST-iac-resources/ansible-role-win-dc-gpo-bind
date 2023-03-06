@@ -4,7 +4,7 @@ function link-gpos {
     [Parameter(Mandatory=$true)][String]$target
     
     $GPOs | ForEach-Object {
-        New-GPLink -Name $_ -Domain training.dt.democloud -Target $target -LinkEnabled Yes
+        New-GPLink -Name $_ -Domain dt.democloud -Target $target -LinkEnabled Yes
     }
 }
 
